@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
-  get 'pages/index'
+  constraints Clearance::Constraints::SignedIn.new do
+    root to: 'pages#new', as: :signed_in_root
+  end
+  
+  constraints Clearance::Constraints::SignedOut.new do
+    root to: 'pages#index'
+  end
 
-  root 'pages#index'
+  resources :pages, only: [:new]
+  #get 'pages/index'
+
+  #root 'pages#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
