@@ -47,3 +47,4 @@ end
 
 # Add by Midi
 gem 'bootstrap-sass'
+gem 'clearance', '~> 1.11'
