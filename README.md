@@ -37,3 +37,8 @@ Next steps:
     rake db:migrate
 
 *******************************************************************************
+
+
+rails generate clearance:routes
+
+This command will also set the config.routes setting to false, meaning that custom routes will be used.
