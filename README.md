@@ -1,4 +1,6 @@
-https://www.sitepoint.com/simple-rails-authentication-with-clearance/
+# ClearSky
+
+My ruby on rails practice from [simple-rails-authentication-with-clearance](https://www.sitepoint.com/simple-rails-authentication-with-clearance/)
 
 ```
 root to: 'pages#index'
